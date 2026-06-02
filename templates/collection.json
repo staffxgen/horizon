@@ -7,11 +7,20 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "section": {
       "type": "section",
       "blocks": {
+        "my_subscription_app_subscription_collection_CzLWya": {
+          "type": "shopify://apps/my-subscription-app/blocks/subscription-collection/019e846e-63c8-7535-8424-ea9dd52bcce6",
+          "settings": {
+            "card_badge_label": "Subscribe & save",
+            "one_time_label": "One-time purchase",
+            "subscribe_label": "Subscribe & save",
+            "plan_select_label": "Delivery frequency"
+          }
+        },
         "text_tqQTNE": {
           "type": "text",
           "name": "Title",
@@ -66,6 +75,7 @@
         }
       },
       "block_order": [
+        "my_subscription_app_subscription_collection_CzLWya",
         "text_tqQTNE",
         "text_twGGkJ"
       ],
@@ -208,11 +218,14 @@
               "name": "t:names.swatches",
               "settings": {
                 "product_swatches_alignment": "flex-start",
+                "product_swatches_alignment_mobile": "flex-start",
+                "hide_padding": false,
                 "product_swatches_padding_top": 4,
                 "product_swatches_padding_bottom": 0,
                 "product_swatches_padding_left": 0,
                 "product_swatches_padding_right": 0
-              }
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -227,6 +240,8 @@
         "layout_type": "grid",
         "product_card_size": "medium",
         "mobile_product_card_size": "small",
+        "enable_infinite_scroll": true,
+        "products_per_page": 24,
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 16,
